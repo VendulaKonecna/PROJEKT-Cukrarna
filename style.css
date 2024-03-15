@@ -2,7 +2,6 @@
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
-
 /*
 	Poznámky:
 	- maximální šířka obsahu uvnitř sekcí je 1100px
@@ -31,5 +30,51 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
+	padding: 0;
+	font-family: "Lora", serif;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 400;
+	font-style: normal;
 }
-
+.hlavicka{
+	display: flex;
+}
+.logo{
+	width: 170px;
+}
+ul{
+	list-style: none;
+	display: flex;
+}
+li{
+	padding: 10px 15px;	
+}
+a{
+	text-decoration: none;
+}
+.hero{
+	background-image: url(images/cupcake.jpg);
+	background-size: cover;
+}
+.obsah_hero{
+	width: 1100px;
+	margin: 0 auto;
+	padding: 80px 40% 80px 0;
+}
+.obsah{
+	width: 1100px;
+	margin: 0 auto;
+}
+.hero_nadpis,
+.hero_odstavec{
+	color: white;
+}
+.hero_nadpis{
+	font-size: 52px;
+	font-weight: 400;
+}
+.hero_odstavec{
+	font-size: 24px;
+	font-style: italic;
+}

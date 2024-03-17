@@ -30,37 +30,53 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
-	padding: 0;
 	font-family: "Lora", serif;
 	font-size: 18px;
 	line-height: 1.5;
 	font-weight: 400;
 	font-style: normal;
+	color: #242424;
 }
+/*Hlavicka*/
 .hlavicka{
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1100px;
+	margin: 0 auto;
 }
 .logo{
 	width: 170px;
+	padding: 30px 0;
 }
 ul{
 	list-style: none;
 	display: flex;
+	padding: 0;
 }
-li{
+a,
+a:visited{
 	padding: 10px 15px;	
-}
-a{
 	text-decoration: none;
+	border-radius: 20px;
+	background-color: transparent;
+	color: #242424;	
 }
+a:hover,
+a:active,
+a:focus{
+	background-color: #f195b2;
+	color: white;
+	border-radius: 20px;
+	padding: 10px 15px;
+}
+
+/*Hero sekce*/
 .hero{
 	background-image: url(images/cupcake.jpg);
 	background-size: cover;
-}
-.obsah_hero{
-	width: 1100px;
-	margin: 0 auto;
-	padding: 80px 40% 80px 0;
+	background-repeat: no-repeat;
+	background-position: center;	
 }
 .obsah{
 	width: 1100px;
@@ -71,10 +87,115 @@ a{
 	color: white;
 }
 .hero_nadpis{
+	font-family: "Playfair Display", serif;
 	font-size: 52px;
-	font-weight: 400;
+	font-weight: 700;
+	line-height: 1.2;
+	padding: 80px 40% 0 0;
+	margin-top: 0;
 }
 .hero_odstavec{
 	font-size: 24px;
 	font-style: italic;
+	padding: 0 40% 80px 0;
+	margin-bottom: 0;
+}
+/*Vitejte sekce*/
+.vitejte{
+	background-color: white;
+	padding: 80px 0;
+}
+.vitejte_flex{
+	display: flex;
+	align-items: center;
+}
+.vitejte_levy{
+	margin-right: 30px;
+}
+.vyrobky a{
+	display: inline-block;
+	background-color: #f195b2;
+	color: white;
+	padding: 15px 40px;
+	border-radius: 30px;
+	margin-top: 30px;
+}
+.vyrobky a:hover,
+.vyrobky a:active,
+.vyrobky a:focus{
+	background-color: #d2567d;
+	margin-top: 30px;
+}
+h2{
+	font-family: "Playfair Display", serif;
+	font-size: 36px;
+	font-weight: 700;
+	color: #3e606b;
+	margin: 0;
+}
+img{
+	border-radius: 5px;
+	display: block;
+}
+/*Nabídka sekce*/
+.nabidka{
+	background-color: #f0f0f0;
+	padding: 80px 0;
+}
+.nabidka_flex{
+	display: flex;
+	flex-direction: column;
+}
+.nabidka_produkt{
+	display: flex;
+	width: 1100px;	
+}
+.produkt_popis{
+	background-color: white;
+	padding: 20px;
+	border-radius: 0 0 5px 5px;
+}
+.produkt_obrazek{
+	border-radius: 5px 5px 0 0;
+}
+.produkt1,
+.produkt2,
+.produkt3{
+	margin-right: 30px;
+}
+.produkt1,
+.produkt2,
+.produkt3,
+.produkt4{
+	flex-basis: 100%;
+	box-shadow: 1px 2px 10px #28272726 ;
+}
+h3{
+	margin-top: 0;
+	font-family: "Playfair Display", serif;
+	line-height: 1.2;
+	font-weight: 700;
+	color: #3e606b;
+	text-align: center;
+}
+
+/*pristup sekce*/
+.pristup{
+	background-color: white;
+	padding: 80px 0;
+}
+.pristup_flex{
+	display: flex;
+	align-items: center;
+}
+.pristup_pravy{
+	margin-left: 30px;
+}
+
+/*paticka*/
+footer{
+	background-color: #303339;
+	color: white;
+	text-align: center; 
+	padding: 30px 0;
 }
